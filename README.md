@@ -1,6 +1,6 @@
 # mcq-randomizer
 
-This program randomizes multiple choice tests to create multiple version of
+This program randomizes multiple choice tests to create multiple versions of
 a test.
 
 It takes in a test and answer key, and produces randomized test with a matching answer key.
