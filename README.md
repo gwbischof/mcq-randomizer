@@ -14,7 +14,7 @@ Each time you execute the program a new random version is generated.
 The generated output files have a unique id postfix, so you can identify
 the question/answerkey pair.
 
-It has not been generalized yet, so your input test must meet some formating
+It has not been generalized yet, so your input test and answers must meet some formating
 requirements:
 - The input files must be text files.
 - Questions must be identified by a unique number, and the number must be followed by a '.'
@@ -27,10 +27,10 @@ requirements:
 
 example question format (question order, spacing and indentation don't matter):
 
-3.  Question text?
-    a. choice text
-    b. choice text
-    c. choice text
+3.  Question text  
+a.  choice text  
+b.  choice text  
+c.  choice text  
 
 example answer key (answer order, spaceing, case, indentation don't matter):
 
