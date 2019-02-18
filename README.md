@@ -28,9 +28,9 @@ requirements:
 example question format (question order, spacing and indentation don't matter):
 
 3.  Question text?
-    a. choice text
-    b. choice text
-    c. choice text
+a. choice text
+b. choice text
+c. choice text
 
 example answer key (answer order, spaceing, case, indentation don't matter):
 
