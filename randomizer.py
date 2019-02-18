@@ -2,8 +2,10 @@ from collections import defaultdict
 import random
 import uuid
 
-test_file = '/home/garrett/soctest.txt'
-answers_file = './example_answers.txt'
+#test_file = '/home/garrett/soctest.txt'
+#answers_file = './example_answers.txt'
+test_file = './input_test.txt'
+answers_file = './input_answers.txt'
 output_test_prefix = './output_test_'
 output_answers_prefix = './output_answers_'
 
@@ -12,9 +14,6 @@ def randomize(mcq_file, answers_file, random_questions=True,random_answers=True)
 
     with open(mcq_file, 'r') as test:
         test_dict = test_to_dict(test)
- #       for key, value in test_dict.items():
- #           print(key, test_dict[key]['question'])
- #           print("--------------")
 
     with open(answers_file, 'r') as answers:
         answers_dict = answers_to_dict(answers)
