@@ -5,8 +5,11 @@ a test.
 
 It takes in a test and answer key, and produces randomized test with a matching answer key.
 
+You will need python3 to run the program. You can download it for your OS here:
+https://www.python.org/downloads/
+
 Currently the input files are hardcoded, so you must place them in the same
-folder as the script and name them input_test.txt and input_answers.txt. This may be more convenient for people using not using this script from the command line. Or you are welcome to modify the program.
+folder as the program and name them input_test.txt and input_answers.txt. This may be more convenient for people using not using this script from the command line. Or you are welcome to modify the program.
 
 Each time you execute the program a new random version is generated.
 
@@ -37,5 +40,3 @@ example answer key (answer order, spaceing, case, indentation don't matter):
 2. b
 3. c
 4. B
-
-
