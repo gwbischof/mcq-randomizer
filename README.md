@@ -27,7 +27,7 @@ requirements:
 
 example question format (question order, spacing and indentation don't matter):
 
-3.  Question text?
+3.  Question text
 a. choice text
 b. choice text
 c. choice text
