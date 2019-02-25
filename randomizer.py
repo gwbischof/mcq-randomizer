@@ -12,10 +12,10 @@ output_answers_prefix = './output_answers_'
 def randomize(mcq_file, answers_file, random_questions=True,random_answers=True):
     letter_list = ['a','b','c','d','e','f']
 
-    with open(mcq_file, 'r') as test:
+    with open(mcq_file, 'r', encoding='utf-8-sig')  as test:
         test_dict = test_to_dict(test)
 
-    with open(answers_file, 'r') as answers:
+    with open(answers_file, 'r', encoding='utf-8-sig') as answers:
         answers_dict = answers_to_dict(answers)
 
     answer_list = list(answers_dict)
@@ -46,7 +46,10 @@ def randomize(mcq_file, answers_file, random_questions=True,random_answers=True)
         while len(choice_list):
             new_answer = None
 
-            random_choice = random.choice(choice_list)
+            if choice_dict['a'].lower() == 'true':
+                random_choice = choice_list[0]
+            else:
+                random_choice = random.choice(choice_list)
 
             if answers_dict[random_question] == random_choice:
                 new_answer = letter_list[current_choice]
@@ -63,7 +66,6 @@ def randomize(mcq_file, answers_file, random_questions=True,random_answers=True)
 
         output_test_file.write('\n')
         current_question += 1
-
     output_test_file.close()
     output_answer_file.close()
 
@@ -91,7 +93,7 @@ def answers_to_dict(answers):
     for line in answers:
         index = line.split('.')[0].strip()
         value = line.split('.')[1].strip()
-        answers_dict[index] = value
+        answers_dict[index] = value.lower()
     return answers_dict
 
 randomize(test_file, answers_file)
